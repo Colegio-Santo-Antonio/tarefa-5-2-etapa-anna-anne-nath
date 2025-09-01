@@ -8,8 +8,8 @@ for i in numero[-1::-2]:
 pares = []
 for i in numero[-2::-2]:
   dobro = 2*int(i)
-  if dobro >= 9:
-    dobro.append(int(dobro - 9))
+  if dobro > 9:
+    dobro = dobro - 9
   pares.append(dobro)
 soma = sum(pares) + sum(impares)
 if int(soma/10) == soma/10:
